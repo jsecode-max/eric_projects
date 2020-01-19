@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.helloworld.Main11Activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="展示 " />
+
+            <EditText
+                android:id="@+id/edit_file_persistence"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type something here"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME " />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="NAME" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE " />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="NAME" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARRIAGE " />
+
+            <EditText
+                android:id="@+id/married"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="NAME" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/from_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FROM SQLITE" />
+
+        <Button
+            android:id="@+id/save_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Data using SharedPreference" />
+
+        <Button
+            android:id="@+id/restore_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restore date" />
+
+        <Button
+            android:id="@+id/create_database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Database" />
+
+        <Button
+            android:id="@+id/add_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Data" />
+
+        <Button
+            android:id="@+id/update_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Data" />
+
+        <Button
+            android:id="@+id/delete_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Data" />
+
+        <Button
+            android:id="@+id/query_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Query Data" />
+
+        <Button
+            android:id="@+id/create_database_pal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="create db by pal" />
+
+        <Button
+            android:id="@+id/insert_pal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert data by pal" />
+
+        <Button
+            android:id="@+id/update_pal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update data by pal" />
+
+        <Button
+            android:id="@+id/delete_pal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete data by pal" />
+
+        <Button
+            android:id="@+id/query_pal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Query data by pal" />
+
+    </LinearLayout>
+</ScrollView>

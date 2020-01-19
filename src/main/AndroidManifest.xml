@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.helloworld">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main18Activity"
+            android:label="Material Design">
+
+        </activity>
+
+        <service
+            android:name=".LongRunningService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Main17Activity" />
+        <activity android:name=".Main16Activity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.helloworld.fileprovider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!--
+                android.support.FILE_PROVIDER_PATHS作为meta-data的键（key），@xml/filepath_data作为meta-data的值（value）
+                FileProvider只能为指定的目录中的文件生成内容 URI。
+                要指定目录，就必须使用 <paths> 元素的子元素在 XML 中指定其存储区域和路径
+            -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Main15Activity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".Main14Activity" /> <!-- 通过解析uri，获知authority，就知道用的是哪个ContentProvider -->
+        <provider
+            android:name=".DatabaseProvider"
+            android:authorities="com.example.helloworld.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Main13Activity" />
+        <activity android:name=".Main12Activity" />
+        <activity android:name=".Main11Activity" />
+        <activity android:name=".LoginActivity" />
+
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- 优先级高的广播在有序广播中先收到 -->
+            <intent-filter android:priority="100">
+                <action android:name="com.example.helloworld.MyBroadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Main10Activity" />
+        <activity android:name=".NewsContentActivity" />
+        <activity android:name=".Main9Activity" />
+        <activity android:name=".Main8Activity" />
+        <activity android:name=".Main7Activity" />
+        <activity android:name=".Main6Activity" />
+        <activity
+            android:name=".Main5Activity"
+            android:label="@string/title_activity_main5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main4Activity">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main3Activity">
+            <intent-filter>
+                <action android:name="com.example.helloworld.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.helloworld.Main16Activity">
+
+    <Button
+        android:id="@+id/internet_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上网键" />
+
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Request(HttpURLConnection)" />
+
+    <Button
+        android:id="@+id/send_request_okhttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Request(OkHttp)" />
+
+    <Button
+        android:id="@+id/send_request_util"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Request(Util)" />
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message by Handler" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/response_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></WebView>
+
+</LinearLayout>

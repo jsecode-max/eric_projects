@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.helloworld.Main8Activity">
+
+    <!--androie:name是与普通activity添加控件不一样的地方，通过指定碎片类名，将碎片引入布局-->
+    <fragment
+        android:id="@+id/left_fragment"
+        android:name="com.example.helloworld.LeftFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!--静态使用-->
+    <!--<fragment-->
+    <!--android:id="@+id/right_fragment"-->
+    <!--android:name="com.example.helloworld.RightFragment"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1" />-->
+
+    <!--动态使用，在代码中动态向FrameLayout添加内容-->
+    <FrameLayout
+        android:id="@+id/right_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="my_images" path="." />
+    <files-path name="my_files" path="tempfiles" />
+    <cache-path name="my_cache" path="." />
+</paths>
+
+<!--
+external-path对应的是内置的sdcard目录/sdcard/，path="."是子目录，完整目录为 /sdcard/
+files-path对应app的/data/data/<package_name>/files/目录，path="tempfiles"是指子目录，即完整的目录为/data/data/<package_name>/files/tempfiles
+cache-path对应的是/data/data/<package_name>/cache/，这个例子里没有子目录(可以不写path)
+-->

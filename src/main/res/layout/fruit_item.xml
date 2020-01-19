@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
+
+<!--普通纵向的布局，类似于ListView--><!--这个布局文件，就是列表的一行--><!--动态设置要加载的图片--><!--<ImageView--><!--android:id="@+id/fruit_image"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />-->
+
+<!--动态设置要展示的文本--><!--<TextView--><!--android:id="@+id/fruit_name"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_vertical"--><!--android:layout_marginLeft="10dp" />-->
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="100dp"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+<!--&lt;!&ndash;横向布局的方式&ndash;&gt;--><!--&lt;!&ndash;这个布局文件，就是列表的一行&ndash;&gt;--><!--&lt;!&ndash;动态设置要加载的图片&ndash;&gt;--><!--<ImageView--><!--android:id="@+id/fruit_image"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_horizontal"/>-->
+
+<!--&lt;!&ndash;动态设置要展示的文本&ndash;&gt;--><!--<TextView--><!--android:id="@+id/fruit_name"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_horizontal"--><!--android:layout_marginTop="10dp"--><!--/>--><!--</LinearLayout>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <!--横向布局的方式-->
+    <!--这个布局文件，就是列表的一行-->
+    <!--动态设置要加载的图片-->
+    <ImageView
+        android:id="@+id/fruit_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <!--动态设置要展示的文本-->
+    <TextView
+        android:id="@+id/fruit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

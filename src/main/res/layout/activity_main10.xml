@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.helloworld.Main10Activity">
+
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SNED BROADCAST BY MYSELF" />
+
+    <Button
+        android:id="@+id/btn_local_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send local broadast" />
+
+    <Button
+        android:id="@+id/to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to login page"/>
+
+    <Button
+        android:id="@+id/force_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send force offline broadcast" />
+
+</LinearLayout>
